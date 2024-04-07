@@ -1,3 +1,3 @@
-![Book picture](./assets/le-langage-c.jpg)
+![Book picture](./assets/book.jpg)
 
 # The C programming language
