@@ -6,3 +6,5 @@ int	main(void)
 	printf("Hello world !\7");
 	printf("Hello world !\?");
 }
+
+// The result might be different from different compiler
