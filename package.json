@@ -1,5 +1,11 @@
 {
   "scripts": {
-    "start": "gcc ./src/sandbox.c && ./a.out"
+    "start": "gcc ./src/sandbox.c && ./a.out",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@belkross/commitlint-config": "^1.0.3",
+    "commitlint": "^19.2.1",
+    "husky": "^9.0.11"
   }
 }
