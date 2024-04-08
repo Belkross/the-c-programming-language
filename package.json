@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "start": "gcc ./src/sandbox.c && ./a.out"
+  }
+}
