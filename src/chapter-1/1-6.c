@@ -1,20 +1,15 @@
+// On macos, to input EOF, you need to use Ctrl+D
+
 #include <stdio.h>
 
 int	main(void)
 {
-	printf("%d\n", -1 == EOF);
-	printf("%d\n", -1 != EOF);
+	int input;
+
+	while ((input = getchar() != EOF))
+	{
+		printf("%d\n", input);
+	}
+
+	printf("%d - pour EOF\n", input);
 }
-
-/* The solution proposed by the book don’t seems to work. Maybe it comes from the compiler I use. */
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	int	c;
-
-// 	while (c = getchar() != EOF)
-// 		printf("%d\n", c);
-// 	printf("%d - pour EOF\n", c);
-// }
