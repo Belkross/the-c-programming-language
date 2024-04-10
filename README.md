@@ -1,3 +1,3 @@
-![Book picture](./assets/book.jpg)
-
 # The C programming language
+
+![Book picture](./asset/book.jpg)
