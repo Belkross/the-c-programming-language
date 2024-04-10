@@ -20,6 +20,8 @@ int countWords(char string[]) {
   int newlineCounter = 0;
   int state = NOTINWORD;
 
+  printf("case: \n%s\n", string);
+
   for (int index = 0; string[index] != ENDOFSTRING; ++index) {
     short character = string[index];
     short isALetter = character != ' ' && character != '\t' && character != '\n';
