@@ -100,11 +100,10 @@ void getWordsLenthArray(char string[]) {
     if (output[index] > highestAmount) {
       highestAmount = output[index];
     }
-    printf("%d ", index + 1);
   }
   printf("\n");
 
-  for (int index = 1; index <= highestAmount; ++index) {
+  for (int index = highestAmount; index > 0; --index) {
     for (int index2 = 0; index2 < ARRAY_LENGTH; ++index2) {
       if (output[index2] >= index) {
         printf("| ");
@@ -114,6 +113,12 @@ void getWordsLenthArray(char string[]) {
     }
     printf("\n");
   }
+
+  for (int index = 0; index < ARRAY_LENGTH - 1; ++index) {
+    printf("%d ", index + 1);
+  }
+
+  printf("+10 <- character number\n");
 
   return;
 }
